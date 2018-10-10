@@ -1,0 +1,87 @@
+<DOCTYPE HTML>
+<html lang="pl">
+<head>
+</head>
+<body>
+      <script language="javascript" type="text/javascript">
+         <!--
+            document.write("Hello World!");
+			
+			var x=5.125;
+			x=x+5;
+			x+=5;
+			//x=Math.round(x);
+			x=Math.floor(x,3);
+			
+			class Prostokat {
+  constructor(wysokosc, szerokosc) {
+    this.wysokosc = wysokosc;
+    this.szerokosc = szerokosc;
+  }
+  
+  get pole() {
+    return this.liczPole();
+  }
+
+  liczPole() {
+    return this.wysokosc * this.szerokosc;
+  }
+}
+
+const kwadrat = new Prostokat(10, 10);
+
+console.log(kwadrat.pole);
+			
+			function test(z,y){
+			alert('Hello Andrzej'+z+y);
+			document.getElementById("test").innerHTML="test";
+			document.getElementsByClassName("test2")[0].innerHTML="test2";
+			document.getElementsByClassName("test2")[1].innerHTML=""+x;
+			for(i=0;i<=2;i++){
+			document.getElementsByClassName("test2")[i].style.color="red";
+			document.getElementsByClassName("test2")[i].style.width="500px";
+			document.getElementsByClassName("test2")[i].style.border="solid 2px blue";
+			document.getElementsByClassName("test2")[i].style.borderColor="red";
+			document.getElementsByClassName("test2")[i].style.padding="10px";
+			document.getElementsByClassName("test2")[i].style.margin="5px";
+				document.getElementsByClassName("test2")[i].style.textAlign="center";
+				
+			}
+			
+			}
+			function ha(){
+			document.getElementsByClassName("test2")[1].style.border="solid 2px blue";
+			}
+			
+			function dodaj(){
+			var x = parseFloat(document.getElementById("arg1").value);
+			var y = parseFloat(document.getElementById("arg2").value);
+			var z = x + y;
+			console.log(z);
+			document.getElementById("sum").value = z;
+			
+			}
+
+			
+			
+			
+			
+			
+			
+         //-->
+      </script>
+<button onclick="test(5,8)">kliknij</button>
+
+<div id="test"></div>
+<div class="test2">1</div>
+<div class="test2" onmouseover="ha()">2</div>
+<div class="test2">3</div>
+<input type="text" id="arg1" value="0">
+<br>
+<input type="text" id="arg2" value="0">
+<br>
+<input type="text" id="sum" value="0" >
+<br>
+<button onclick="dodaj()">Doodaj</button>
+</body>
+</html>
